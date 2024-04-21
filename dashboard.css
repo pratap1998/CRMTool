@@ -259,12 +259,21 @@
     margin-top: 70px;
 }
 
-.dashpro
+.main-content .dashpro
 {
     position: absolute;
-    top: 100%;
-    right: 10%;
-    width: 300px;
+    top: 70%;
+    right: 2%;
+    width: 250px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+
+.dashpro.open-menu
+{
+    max-height: 400px;
 }
 
 .sub-menu
@@ -289,6 +298,7 @@
 .profname i
 {
     width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-right: 15px;
     font-size: 25px;
@@ -302,7 +312,7 @@
     height: 1px;
     width: 100%;
     background: #ccc;
-    margin: 15px 0px 10px;
+    margin: 0px 0px 20px;
 }
 
 
@@ -342,17 +352,8 @@
 
 .sub-link:hover p
 {
-    font-weight: 600;
+    font-weight: 550;
 }
-
-
-
-
-
-
-
-
-
 
 
 .box
@@ -384,7 +385,6 @@
     border-radius: 50%;
     text-align: center;
     color: #fff;
-    
     margin-right: 15px;
 }
 
